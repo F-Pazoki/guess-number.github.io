@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>guess number</title>
+  </head>
+  <body>
+    <main class="guess-game">
+      <div class="guess-game__header">
+        <button class="btn guess-game__btn-headr">again!</button>
+        <p class="header__text">&lt; Between 1 to 20 &gt;</p>
+      </div>
+      <p class="guess-game__title">guess my number!</p>
+
+      <div class="secret-number-wrapper">
+        <div class="secret-number">?</div>
+      </div>
+
+      <div class="guess-game__detail">
+        <form action="#" class="guess-game__form">
+          <input
+            type="number"
+            class="guess-game__number"
+            placeholder="Enter your guess"
+          />
+          <button class="btn guess-game__btn-check">check!</button>
+        </form>
+        <div class="messages">
+          <p class="message">start guessing...</p>
+          <div class="scores">
+            <p class="score">💯 score: 20</p>
+            <p class="high-score">🏅 High score: 0</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <p class="modal__text"><span>🧨</span><span>Game over</span></p>
+      <p class="modal__text"><span>🔁</span> <span> try again</span></p>
+
+      <p class="close-btn">&times;</p>
+    </div>
+  </body>
+</html>
